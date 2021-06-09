@@ -30,6 +30,7 @@ public class AppConfig {
         return new OrderServiceImpl(memberRepository(), new FixDiscountPolicy());
     }
 
+
     @Bean
     public DiscountPolicy discountPolicy(){
 //        return new FixDiscountPolicy();
