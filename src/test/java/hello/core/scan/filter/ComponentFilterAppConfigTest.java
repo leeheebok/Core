@@ -20,8 +20,7 @@ public class ComponentFilterAppConfigTest {
         assertThat(beanA).isNotNull();
 
         org.junit.jupiter.api.Assertions.assertThrows(
-                NoSuchBeanDefinitionException.class,
-                () -> ac.getBean("beanB", BeanB.class));
+                NoSuchBeanDefinitionException.class, () -> ac.getBean("beanB", BeanB.class));
 
     }
     @Configuration
